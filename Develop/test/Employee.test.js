@@ -26,13 +26,14 @@ test("Can set email via constructor argument", () => {
   expect(e.email).toBe(testValue);
 });
 
-/*
+
 test("Can get name via getName()", () => {
   const testValue = "Alice";
   const e = new Employee(testValue);
   expect(e.getName()).toBe(testValue);
 });
 
+/*
 test("Can get id via getId()", () => {
   const testValue = 100;
   const e = new Employee("Foo", testValue);
