@@ -8,8 +8,14 @@ class Employee {
   }
 
   getName() {
-    return name = this.name
+    return this.name
   }
+
+  getId() {
+    return this.id
+  }
+
+  
 }
 
 
