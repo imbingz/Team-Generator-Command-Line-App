@@ -5,6 +5,7 @@ test("Can instantiate Employee instance", () => {
   expect(typeof(e)).toBe("object");
 });
 
+/*
 test("Can set name via constructor arguments", () => {
   const name = "Alice";
   const e = new Employee(name);
@@ -46,3 +47,5 @@ test("getRole() should return \"Employee\"", () => {
   const e = new Employee("Alice", 1, "test@test.com");
   expect(e.getRole()).toBe(testValue);
 });
+
+*/
