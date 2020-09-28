@@ -1,50 +1,63 @@
 const questions = [
-	// Name
-	{
-		type: 'input',
-		message: 'Please enter your FULL name',
-		name: 'name',
-		validate: function(name) {
-			let pass = name.match(/^[a-zA-Z]+ [a-zA-Z]+$/g);
-			if (pass) {
-				return true;
-			}
+	// Team Name
+	// {
+	// 	type: 'input',
+	// 	message: 'What is your team name?',
+	// 	name: 'teamName',
+	// 	validate: teamName => {
+	// 		if (teamName) {
+	// 			return true;
+	// 		}
 
-			return 'Please enter a valid FULL name.';
-		},
-	},
-	// ID
-	{
-		type: 'input',
-		message: 'Please enter your Employee ID',
-		name: 'id',
-		validate: function(id) {
-			let pass = id.match(/^[0-9a-zA-Z]+$/g);
-			if (pass) {
-				return true;
-			}
+	// 		return 'Enter your team name please.';
+	// 	},
+	// },
+	// Employee Name
+	// {
+	// 	type: 'input',
+	// 	message: 'Enter the employee's FULL name',
+	// 	name: 'name',
+	// 	validate: name => {
+	// 		let pass = name.match(/^[a-zA-Z]+ [a-zA-Z]+$/g);
+	// 		if (pass) {
+	// 			return true;
+	// 		}
 
-			return 'Please enter a valid ID.';
-		},
-	},
-	// Email
-	{
-		type: 'input',
-		message: 'Please enter your email',
-		name: 'email',
-		validate: function(email) {
-			let pass = email.match(/\S+@\S+\.\S+/g);
-			if (pass) {
-				return true;
-			}
+	// 		return 'Please enter a valid FULL name.';
+	// 	},
+	// },
+	// // ID
+	// {
+	// 	type: 'input',
+	// 	message: 'Enter the employee's ID',
+	// 	name: 'id',
+	// 	validate: id => {
+	// 		let pass = id.match(/^[0-9a-zA-Z]+$/g);
+	// 		if (pass) {
+	// 			return true;
+	// 		}
 
-			return 'Please enter a valid email.';
-		},
-	},
+	// 		return 'Please enter a valid ID.';
+	// 	},
+	// },
+	// // Email
+	// {
+	// 	type: 'input',
+	// 	message: 'Enter the employee's email',
+	// 	name: 'email',
+	// 	validate: email => {
+	// 		let pass = email.match(/\S+@\S+\.\S+/g);
+	// 		if (pass) {
+	// 			return true;
+	// 		}
+
+	// 		return 'Please enter a valid email.';
+	// 	},
+	// },
 	// Roll
 	{
 		type: 'list',
-		message: 'Please select a roll',
+		message: 'Please select the employee\'s roll in your team',
 		name: 'roll',
 		choices: [ 'Manager', 'Engineer', 'Intern' ],
 	},
@@ -52,11 +65,11 @@ const questions = [
 	{
 		type: 'input',
 		name: 'officeNumber',
-		message: 'Please enter your Office Number',
-		when: function(answers) {
+		message: 'Please enter the Manager\'s Office Number',
+		when: answers => {
 			return answers.roll === 'Manager';
 		},
-		validate: function(officeNumber) {
+		validate: officeNumber => {
 			let pass = officeNumber.match(/^[0-9]+$/g);
 			if (pass) {
 				return true;
@@ -68,34 +81,41 @@ const questions = [
 	// Only Prompt when answer to roll is Engineer
 	{
 		type: 'input',
-		name: 'githubUser',
-		message: 'Please enter your Github Username',
-		when: function(answers) {
+		name: 'github',
+		message: 'Please enter the Engineer\'s Github Username',
+		when: answers => {
 			return answers.roll === 'Engineer';
 		},
-		validate: function(githubUser) {
-			if (githubUser) {
+		validate: github => {
+			if (github) {
 				return true;
 			}
 
-			return 'Please enter your Github Username.';
+			return 'Please enter the Engineer\'s Github Username.';
 		},
 	},
 	// Only Prompt when answer to roll is Intern
 	{
 		type: 'input',
 		name: 'school',
-		message: 'Please enter your School Name',
-		when: function(answers) {
+		message: 'Please enter the Intern\'s School Name',
+		when: answers => {
 			return answers.roll === 'Intern';
 		},
-		validate: function(school) {
+		validate: school => {
 			if (school) {
 				return true;
 			}
-			return 'Please enter your School Name.';
+			return 'Please enter the Intern\'s School Name.';
 		},
-	},
+  },
+  //Check whether to add more employee
+  {
+    type: 'confirm',
+    name: 'isAdding',
+    message: 'Would you like to add another team member?',
+    deault:true
+  }
 ];
 
 module.exports = questions;
