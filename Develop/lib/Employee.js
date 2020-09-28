@@ -25,10 +25,5 @@ class Employee {
 }
 
 
-const e = new Employee
-
-
-
-
 //Export the Employee Class
 module.exports = Employee;
