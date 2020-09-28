@@ -1,0 +1,30 @@
+/*
+colors: #2aa38b, #f8da75,  #571994, #d5ccf8, #fff, 
+*/
+
+div.jumbotron.team-heading {
+	background-color: #2aa38b;
+}
+
+div.card {
+	margin: 5em auto;
+}
+div.card-header {
+	background-color: #f8da75;
+}
+
+h1 {
+	color: #fff;
+}
+
+h2.card-title {
+	color: #571994;
+}
+
+h3 > i {
+	color: #2aa38b;
+}
+
+div.card-body {
+	background-color: #d5ccf8;
+}
