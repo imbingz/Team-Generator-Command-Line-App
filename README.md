@@ -27,6 +27,7 @@ https://youtu.be/q_MTB9bUy4w<br>
  
 
   ## Screenshots-Demo
+  <kbd>![screenshot-demo1](./Assets/images/s.gif)</kbd>
   <kbd>![screenshot-demo1](./Assets/images/s2.png)</kbd>
   
   ## Project Objective
