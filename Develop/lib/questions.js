@@ -1,4 +1,11 @@
 const questions = [
+	// Roll
+	{
+		type: 'list',
+		message: 'Please select the employee\'s roll in your team',
+		name: 'roll',
+		choices: ['Manager', 'Engineer', 'Intern'],
+	},
 	// Employee Name
 	{
 		type: 'input',
@@ -40,13 +47,6 @@ const questions = [
 
 			return 'Please enter a valid email.';
 		},
-	},
-	// Roll
-	{
-		type: 'list',
-		message: 'Please select the employee\'s roll in your team',
-		name: 'roll',
-		choices: [ 'Manager', 'Engineer', 'Intern' ],
 	},
 	// Only Prompt when answer to roll is Manager
 	{
