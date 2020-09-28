@@ -1,5 +1,5 @@
 /*
-colors: #2aa38b, #f8da75,  #571994, #d5ccf8, #fff, 
+colors: #2aa38b, #f8da75,  #571994, #d5ccf8, #fff,
 */
 
 div.jumbotron.team-heading {
@@ -10,7 +10,7 @@ div.card {
 	margin: 5em auto;
 }
 div.card-header {
-	background-color: #f8da75;
+	background-color: #fce188;
 }
 
 h1 {
@@ -26,5 +26,5 @@ h3 > i {
 }
 
 div.card-body {
-	background-color: #d5ccf8;
+	background-color:#d5ccf8;
 }
