@@ -67,6 +67,6 @@
   
   <hr>
   <p align='center'><i>
-  This README was generated with ❤️ by [BING Z](https://imbingz.github.io/Responsive-Website-Portfolio/)
+  This README was generated with ❤️ by <a href="https://imbingz.github.io/Responsive-Website-Portfolio/"> BING Z</a>
   </i></p>
   
