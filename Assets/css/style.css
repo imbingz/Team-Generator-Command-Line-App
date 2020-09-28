@@ -3,7 +3,8 @@ colors: #2aa38b, #f8da75,  #571994, #d5ccf8, #fff,
 */
 
 div.jumbotron.team-heading {
-	background-color: #2aa38b;
+	background: -webkit-linear-gradient(45deg, yellow, #571994, green);
+	background: linear-gradient(45deg, yellow, #571994, green);
 }
 
 div.card {
@@ -26,5 +27,5 @@ h3 > i {
 }
 
 div.card-body {
-	background-color:#d5ccf8;
+	background-color: #d5ccf8;
 }
