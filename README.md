@@ -48,7 +48,7 @@
   
   ## Credits and Reference
   
-  I'd like to thank my friend [@theykay][https://github.com/theykay] for taking time to work on the given files togehter, which helped me better understand the   instruction. The following link helped me with this project. 
+  I'd like to thank my friend [@theykay](https://github.com/theykay) for taking time to work on the given files togehter, which helped me better understand the   instruction. The following link helped me with this project. 
   <br><br>
   * [How to check and make new dir in fs](https://stackoverflow.com/questions/21194934/how-to-create-a-directory-if-it-doesnt-exist-using-node-js)
 
