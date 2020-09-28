@@ -1,59 +1,46 @@
 const questions = [
-	// Team Name
-	// {
-	// 	type: 'input',
-	// 	message: 'What is your team name?',
-	// 	name: 'teamName',
-	// 	validate: teamName => {
-	// 		if (teamName) {
-	// 			return true;
-	// 		}
-
-	// 		return 'Enter your team name please.';
-	// 	},
-	// },
 	// Employee Name
-	// {
-	// 	type: 'input',
-	// 	message: 'Enter the employee's FULL name',
-	// 	name: 'name',
-	// 	validate: name => {
-	// 		let pass = name.match(/^[a-zA-Z]+ [a-zA-Z]+$/g);
-	// 		if (pass) {
-	// 			return true;
-	// 		}
+	{
+		type: 'input',
+		message: 'Enter the employee\'s FULL name',
+		name: 'name',
+		validate: name => {
+			let pass = name.match(/^[a-zA-Z]+ [a-zA-Z]+$/g);
+			if (pass) {
+				return true;
+			}
 
-	// 		return 'Please enter a valid FULL name.';
-	// 	},
-	// },
-	// // ID
-	// {
-	// 	type: 'input',
-	// 	message: 'Enter the employee's ID',
-	// 	name: 'id',
-	// 	validate: id => {
-	// 		let pass = id.match(/^[0-9a-zA-Z]+$/g);
-	// 		if (pass) {
-	// 			return true;
-	// 		}
+			return 'Please enter a valid FULL name.';
+		},
+	},
+	// ID
+	{
+		type: 'input',
+		message: 'Enter the employee\'s ID',
+		name: 'id',
+		validate: id => {
+			let pass = id.match(/^[0-9a-zA-Z]+$/g);
+			if (pass) {
+				return true;
+			}
 
-	// 		return 'Please enter a valid ID.';
-	// 	},
-	// },
-	// // Email
-	// {
-	// 	type: 'input',
-	// 	message: 'Enter the employee's email',
-	// 	name: 'email',
-	// 	validate: email => {
-	// 		let pass = email.match(/\S+@\S+\.\S+/g);
-	// 		if (pass) {
-	// 			return true;
-	// 		}
+			return 'Please enter a valid ID.';
+		},
+	},
+	// Email
+	{
+		type: 'input',
+		message: 'Enter the employee\'s email',
+		name: 'email',
+		validate: email => {
+			let pass = email.match(/\S+@\S+\.\S+/g);
+			if (pass) {
+				return true;
+			}
 
-	// 		return 'Please enter a valid email.';
-	// 	},
-	// },
+			return 'Please enter a valid email.';
+		},
+	},
 	// Roll
 	{
 		type: 'list',
