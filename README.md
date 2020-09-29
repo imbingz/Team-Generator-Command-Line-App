@@ -5,7 +5,7 @@
   [![project-top-language](https://img.shields.io/github/languages/top/imbingz/Team-Generator-Command-Line-App?color=blueviolet)](https://github.com/imbingz/Team-Generator-Command-Line-App)
   [![license](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
   [![node.js](https://img.shields.io/node/v/c?color=pink)](https://nodejs.org/en/)
-  [![npm](https://img.shields.io/npm/v/npm?color=blue&logo=npm)](https://www.npmjs.com/package/inquirer)
+  [![npm](https://img.shields.io/npm/v/npm?color=red&logo=npm)](https://www.npmjs.com/package/inquirer)
 
   ## Table of Content
   * [ Project Links ](#Project-Links)
