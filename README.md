@@ -1,7 +1,7 @@
 # TEAM MEMBER DASHBOARD GENERATOR - COMMAND LINE APP
 
   [![github-follow](https://img.shields.io/github/followers/imbingz?label=Follow&logoColor=purple&style=social)](https://github.com/imbingz)
-  [![project-languages-used](https://img.shields.io/github/languages/count/imbingz/Team-Generator-Command-Line-App?color=important)](https://github.com/imbingz/Team-Generator-Command-Line-App)
+  [![project-languages-used](https://img.shields.io/github/languages/count/imbingz/Team-Generator-Command-Line-App?color=blue)](https://github.com/imbingz/Team-Generator-Command-Line-App)
   [![project-top-language](https://img.shields.io/github/languages/top/imbingz/Team-Generator-Command-Line-App?color=blueviolet)](https://github.com/imbingz/Team-Generator-Command-Line-App)
   [![license](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
   [![node.js](https://img.shields.io/node/v/c?color=pink)](https://nodejs.org/en/)
