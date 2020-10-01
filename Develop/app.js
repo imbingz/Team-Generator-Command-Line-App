@@ -22,9 +22,9 @@ async function init() {
 	try {
 		const answers = await inquirer.prompt(questions);
 
-    const { name, id, email, roll } = answers;
+                const { name, id, email, roll } = answers;
 
-    //Check employee's roll and create correspending class instance
+    		//Check employee's roll and create correspending class instance
 		switch (roll) {
 			case 'Manager':
 				let manager = new Manager(name, id, email, answers.officeNumber);
@@ -39,11 +39,11 @@ async function init() {
 				employees.push(intern);
 		}
 
-    //Prompt the questions again when adding team member is chosen
-    if (answers.isAdding) init();
+    		//Prompt the questions again when adding team member is chosen
+   		if (answers.isAdding) init();
     
-    //Call renderOutput function
-    renderOutput();
+   		 //Call renderOutput function
+    		renderOutput();
 
 	} catch (err) {
 		console.log(err);
